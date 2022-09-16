@@ -52,8 +52,13 @@ public class UserController {
     
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable int id) {
-    	
     	return userservice.deleteUser(id);
+    }
+    
+    @DeleteMapping("/{email}")
+    public String deleteUserByEmail(@PathVariable String email) {
+    	// return userservice.deleteUser(id);
+    	return null;
     }
 
 }
